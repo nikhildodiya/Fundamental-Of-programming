@@ -4,24 +4,28 @@
            
         int calc; // Variable To Store The Value
         int no1, no2;
-int add() // Using Function For addition
-
+int add(int no1, int no2) // Using Function For addition
+{
             printf("\naddition is : %d", no1 + no2);
+            return 0;
 }
 
-int sub() // Using Function For Substraction
+int sub(int no1, int no2) // Using Function For Substraction
 {
             printf("\nsubstraction is : %d", no1 - no2);
+            return 0;
 }
 
-int mul() // Using function For Multiplication
+int mul(int no1, int no2) // Using function For Multiplication
 {
             printf("\nmultiplication Is : %d", no1 * no2);
+            return 0;
 }
 
-int div() // Using Function For Division
+int div(float no1, float no2) // Using Function For Division
 {
             printf("\ndivision Is : %f", (float)no1 / (float)no2);
+            return 0;
 }
 
 int main() // Main Function
@@ -46,19 +50,19 @@ int main() // Main Function
     switch (calc) // Using Switch Case
     {
         case 1:
-        add();
+        add(no1, no2);
         break;
 
         case 2:
-        sub();
+        sub(no1, no2);
         break;
         
         case 3:
-        mul();
+        mul(no1, no2);
         break;
 
         case 4:
-        div();
+        div(no1, no2);
         break;
                
         default:
